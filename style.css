@@ -1,0 +1,309 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: "Poppins", system-ui;
+}
+
+.sharktankOffer {
+  background-color: #72ffffea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 2.5rem;
+  position: sticky;
+  top: 0;
+}
+
+/* Nav Start */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 3rem;
+}
+
+.leftbox {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.leftbox img {
+  height: 4rem;
+  margin-left: 1rem;
+}
+
+.rigthbox {
+  display: flex;
+  align-items: center;
+}
+
+.rigthbox button {
+  cursor: pointer;
+  height: 3rem;
+  width: 8rem;
+  border: 0;
+  border-radius: 1rem;
+  background-color: rgba(255, 68, 0, 0.925);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.5s ease-in;
+  margin-right: 1rem;
+}
+
+.rigthbox svg {
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+.rigthbox button:hover {
+  background-color: white;
+  color: rgba(255, 68, 0, 0.925);
+  border: 1px solid rgba(255, 68, 0, 0.925);
+}
+
+/* Nav End */
+
+/* Hero Sectiom */
+
+#hero {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product {
+  margin-top: 2rem;
+  margin-left: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.product img {
+  width: 500px;
+}
+
+.benefits {
+  margin-top: 2rem;
+  background-color: #72ffff44;
+  border-radius: 1rem;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefits svg {
+  background-color: #72ffff;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+li {
+  margin-top: 0.5rem;
+  list-style: none;
+}
+.productdecription {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 2rem;
+  padding-right: 5rem;
+  margin-left: 5rem;
+}
+
+.productdecription h1 {
+  width: fit-content;
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(43, 43, 128);
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+.discounted-price {
+  color: rgb(0, 0, 0);
+  text-decoration: line-through;
+  margin-right: 1rem;
+}
+
+.price-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sharktanksale {
+  text-align: center;
+  color: white;
+  background-color: rgb(43, 43, 128);
+  border: 0;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 1rem;
+  width: 11rem;
+  height: 1.5rem;
+}
+
+.description {
+  margin: 2rem 0 0 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.square {
+  width: 15rem;
+  height: 7rem;
+  display: flex;
+  border-radius: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: border-color 0.3s, accent-color 0.3s;
+}
+
+.square.active {
+  border: 2px solid #72ffff;
+  accent-color: #72ffff;
+}
+
+input[type="radio"] {
+  margin-bottom: 10px;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+}
+
+label {
+  text-align: center;
+}
+.square input[type="radio"] {
+  /* Hide the default radio button */
+  appearance: none;
+  -webkit-appearance: none;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  width: 20px; /* Size of the radio button circle */
+  height: 20px; /* Size of the radio button circle */
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  background-color: #fff; /* Background color of the radio button */
+}
+
+.square input[type="radio"]::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px; /* Size of the inner dot */
+  height: 12px; /* Size of the inner dot */
+  border-radius: 50%;
+  background-color: #72ffff; /* Color of the inner dot */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.square input[type="radio"]:checked::before {
+  opacity: 1; /* Show the inner dot when checked */
+}
+
+.square input[type="radio"]:focus {
+  border-color: #72ffff; /* Border color when focused */
+}
+
+.delivery{
+    margin-top: 2rem;
+    transition: display 1s;
+    /* display: none; */
+}
+
+.delivery span{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.delivery select{
+    width: 32rem;
+    height: 2rem;
+}
+
+
+.quantity{
+    margin-top: 2rem;
+    transition: display 1s;
+
+}
+
+
+.quantity span{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.quantity select{
+    width: 32rem;
+    height: 2rem;
+}
+
+
+.addcart{
+    margin-top: 2rem;
+    background-color: rgb(255, 153, 0);
+    height: 3rem;
+    width: 15rem;
+    border-radius: 0.5rem;
+    border: 0;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background-color 1s;
+}
+
+.addcart:hover{
+    background-color: rgb(43, 43, 128);
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    margin-top: 1rem;
+
+}
+
+#discount{
+    color: red;
+    margin-bottom: 0.50rem;
+    
+}
+
+.bottom img {
+    width: 1rem;
+}
+
+.shippingicon{
+    margin: 0.5rem 0;
+}
